@@ -9,7 +9,7 @@ node {
 
     stage('Build image') {
   
-       app = sudo docker.build("vijayramdoc/nodeapp-deployment1")
+       app = docker.build("vijayramdoc/nodeapp-deployment1")
     }
 
     stage('Push image') {
